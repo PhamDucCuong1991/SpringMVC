@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/information" method="get" enctype="multipart/form-data">
+
+    <a th:text="${'Mã nhân viên: '+employee.getEmployeeCode()}"></a><br>
+    <a th:text="${'Tên nhân viên: '+employee.getName()}"></a><br>
+    <a th:text="${'Tuổi: '+employee.getAge()}"></a><br>
+    <a th:text="${'Mức lương(USD): '+employee.getSalary()}"></a><br>
+    <a th:text="${'Phòng/ban: '+employee.getBranch()}"></a><br>
+
+    <a href="home">Trở về</a>
+</form>
+
+</body>
+</html>
